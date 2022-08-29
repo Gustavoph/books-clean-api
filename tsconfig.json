@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist", // pasta para arquivos buildados
+    "module": "commonjs", // modulo de importação no build
+    "target": "ES2019", // versão do ECMA  
+    "esModuleInterop": true, // converte o import para require ,
+    "allowJs": true, // permite arquivos js no build
+    "strict": true
+  }
+}
