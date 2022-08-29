@@ -5,7 +5,7 @@ export class SignUpController implements Controller {
   async handle (httpRequest: HttpRequest): Promise<HttpResponse> {
     if (!httpRequest.body.name) {
       return {
-        body: '',
+        body: new Error('Missing param: name'),
         statusCode: 400
       }
     }
